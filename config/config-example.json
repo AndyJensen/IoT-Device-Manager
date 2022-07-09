@@ -1,0 +1,19 @@
+{
+  "alertTimeout": 300000,
+  "alertHosts": ["xxxxxxxx", "xxxxxxxx", "xxxxxxxx"],
+  "email": {
+    "host": "xxxxxxxx",
+    "port": 465,
+    "secure": true,
+    "user": "xxxxxxxx",
+    "auth": "xxxxxxxx",
+    "fromName": "\"DEVICE\" <xxxxxxxx>",
+    "notificationRecipients": "xxxxxxxx"
+  },
+  "mysql": {
+    "user": "xxxxxxxx",
+    "pass": "xxxxxxxx",
+    "host": "xxxxxxxx",
+    "database": "xxxxxxxx"
+  }
+}
