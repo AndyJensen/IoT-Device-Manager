@@ -1,6 +1,7 @@
 {
   "alertTimeout": 300000,
   "alertHosts": ["xxxxxxxx", "xxxxxxxx", "xxxxxxxx"],
+  "logDirectory": "xxxxxxxx",
   "email": {
     "host": "xxxxxxxx",
     "port": 465,

@@ -1,7 +1,7 @@
 const nodemailer = require("nodemailer")
 const fs = require("fs")
 const config = require("./config/config.json")
-
+const logger = require("./logger.js").loggerEmail
 const transporter = nodemailer.createTransport({
   host: config.email.host,
   port: config.email.port,
@@ -20,9 +20,9 @@ async function deviceAlert(obj) {
       subject: "DEVICE OUTAGE!",
       text: obj
     })
-    console.log("Message Sent")
+    logger.info("Message Sent", obj)
   } catch (e) {
-    console.log("Something Broke", e)
+    logger.error(e)
   }
 }
 
